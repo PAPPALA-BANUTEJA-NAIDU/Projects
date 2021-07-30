@@ -53,7 +53,7 @@ def result(board, action):
         raise NotImplementedError
     else:
         new_board = copy.deepcopy(board)
-        new_board[action[0]][action[1]] = player(board)
+        new_board[action[0]][action[1]]= player(board)
     return new_board
 
 def winner(board):
